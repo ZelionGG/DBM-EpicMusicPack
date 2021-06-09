@@ -1,0 +1,10 @@
+## Interface: 90005
+## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Epic Music Pack|r by |r|cffFF0000ZelionGG
+## DefaultState: enabled
+## RequiredDeps: DBM-Core
+## Author: ZelionGG
+## Version: 1.0.0
+## X-DBM-MusicPack: 1
+## X-DBM-MusicPack-GlobalName: DBMMPEpicMusicPack
+
+MusicLoadList.lua
