@@ -26,6 +26,18 @@ function DBMMPEpicMusicPack()
         text = "EMP - Edgar Hopp - Last Fight for Freedom", 
         value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_LastFightforFreedom.ogg"
     })
+	tinsert(DBM.Music, {
+        text = "EMP - Dream Cave - Last Strike for Glory", 
+        value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_LastStrikeForGlory.mp3"
+    })
+	tinsert(DBM.Music, {
+        text = "EMP - Bonnie Grace - Trails of Legends", 
+        value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_TrailsOfLegends.mp3"
+    })
+	tinsert(DBM.Music, {
+        text = "EMP - Robert Ruth - Karma Bullet", 
+        value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_KarmaBullet.mp3"
+    })
 
     -- Dungeon BGM Table
 	if DBM.DungeonMusic then
@@ -48,6 +60,18 @@ function DBMMPEpicMusicPack()
         tinsert(DBM.DungeonMusic, {
             text = "EMP - Edgar Hopp - Last Fight for Freedom", 
             value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_LastFightforFreedom.ogg"
+        })
+        tinsert(DBM.DungeonMusic, {
+            text = "EMP - Dream Cave - Last Strike for Glory", 
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_LastStrikeForGlory.mp3"
+        })
+        tinsert(DBM.DungeonMusic, {
+            text = "EMP - Bonnie Grace - Trails of Legends", 
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_TrailsOfLegends.mp3"
+        })
+        tinsert(DBM.DungeonMusic, {
+            text = "EMP - Robert Ruth - Karma Bullet", 
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_KarmaBullet.mp3"
         })
     end
 
@@ -73,7 +97,19 @@ function DBMMPEpicMusicPack()
             text = "EMP - Edgar Hopp - Last Fight for Freedom", 
             value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_LastFightforFreedom.ogg"
         })
+        tinsert(DBM.BattleMusic, {
+            text = "EMP - Dream Cave - Last Strike for Glory", 
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_LastStrikeForGlory.mp3"
+        })
+        tinsert(DBM.BattleMusic, {
+            text = "EMP - Bonnie Grace - Trails of Legends", 
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_TrailsOfLegends.mp3"
+        })
+        tinsert(DBM.BattleMusic, {
+            text = "EMP - Robert Ruth - Karma Bullet", 
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_KarmaBullet.mp3"
+        })
     end
-
+    
 	inserted = true
 end

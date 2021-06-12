@@ -1,8 +1,7 @@
 # DBM - Epic Music Pack
 
-## [1.0.2](https://github.com/ZelionGG/DBM-EpicMusicPack/tree/v1.0.2) (2021-06-10)
+## [1.0.3](https://github.com/ZelionGG/DBM-EpicMusicPack/tree/v1.0.3) (2021-06-12)
 
-[Full Changelog](https://github.com/ZelionGG/DBM-EpicMusicPack/compare/v1.0.1...v1.0.2) [Previous Releases](https://github.com/ZelionGG/DBM-EpicMusicPack/releases)
+[Full Changelog](https://github.com/ZelionGG/DBM-EpicMusicPack/compare/v1.0.2...v1.0.3) [Previous Releases](https://github.com/ZelionGG/DBM-EpicMusicPack/releases)
 
-- Change .wav files into .ogg files
-- Added 1 song
+- Added 3 songs
