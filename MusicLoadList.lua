@@ -38,6 +38,14 @@ function DBMMPEpicMusicPack()
         text = "EMP - Robert Ruth - Karma Bullet", 
         value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_KarmaBullet.mp3"
     })
+	tinsert(DBM.Music, {
+        text = "EMP - Sham Stalin & Pandora Journey - My Condolences, Monster", 
+        value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_MyCondolencesMonster.mp3"
+    })
+	tinsert(DBM.Music, {
+        text = "EMP - Mark Petrie - Abeyance", 
+        value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_Abeyance.mp3"
+    })
 
     -- Dungeon BGM Table
 	if DBM.DungeonMusic then
@@ -72,6 +80,14 @@ function DBMMPEpicMusicPack()
         tinsert(DBM.DungeonMusic, {
             text = "EMP - Robert Ruth - Karma Bullet", 
             value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_KarmaBullet.mp3"
+        })
+        tinsert(DBM.DungeonMusic, {
+            text = "EMP - Sham Stalin & Pandora Journey - My Condolences, Monster", 
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_MyCondolencesMonster.mp3"
+        })
+        tinsert(DBM.DungeonMusic, {
+            text = "EMP - Mark Petrie - Abeyance", 
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_Abeyance.mp3"
         })
     end
 
@@ -108,6 +124,14 @@ function DBMMPEpicMusicPack()
         tinsert(DBM.BattleMusic, {
             text = "EMP - Robert Ruth - Karma Bullet", 
             value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_KarmaBullet.mp3"
+        })
+        tinsert(DBM.BattleMusic, {
+            text = "EMP - Sham Stalin & Pandora Journey - My Condolences, Monster", 
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_MyCondolencesMonster.mp3"
+        })
+        tinsert(DBM.BattleMusic, {
+            text = "EMP - Mark Petrie - Abeyance", 
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_Abeyance.mp3"
         })
     end
     
