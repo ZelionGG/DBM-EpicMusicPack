@@ -58,6 +58,14 @@ function DBMMPEpicMusicPack()
         text = "EMP - Audiomachine - Absolute Magnitude", 
         value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_AbsoluteMagnitude.mp3"
     })
+	tinsert(DBM.Music, {
+        text = "EMP - Machinimasound - Freedom Fighters", 
+        value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_MS_FreedomFighters.mp3"
+    })
+	tinsert(DBM.Music, {
+        text = "EMP - Machinimasound - Mercenaries", 
+        value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_MS_Mercenaries.mp3"
+    })
 
     -- Dungeon BGM Table
 	if DBM.DungeonMusic then
@@ -112,6 +120,14 @@ function DBMMPEpicMusicPack()
         tinsert(DBM.DungeonMusic, {
             text = "EMP - Audiomachine - Absolute Magnitude", 
             value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_AbsoluteMagnitude.mp3"
+        })
+        tinsert(DBM.DungeonMusic, {
+            text = "EMP - Machinimasound - Freedom Fighters", 
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_MS_FreedomFighters.mp3"
+        })
+        tinsert(DBM.DungeonMusic, {
+            text = "EMP - Machinimasound - Mercenaries", 
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_MS_Mercenaries.mp3"
         })
     end
 
@@ -168,6 +184,14 @@ function DBMMPEpicMusicPack()
         tinsert(DBM.BattleMusic, {
             text = "EMP - Audiomachine - Absolute Magnitude", 
             value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_AbsoluteMagnitude.mp3"
+        })
+        tinsert(DBM.BattleMusic, {
+            text = "EMP - Machinimasound - Freedom Fighters", 
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_MS_FreedomFighters.mp3"
+        })
+        tinsert(DBM.BattleMusic, {
+            text = "EMP - Machinimasound - Mercenaries", 
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_MS_Mercenaries.mp3"
         })
     end
     
