@@ -3,7 +3,7 @@
 ## DefaultState: enabled
 ## RequiredDeps: DBM-Core
 ## Author: ZelionGG
-## Version: 1.0.7
+## Version: 1.0.8
 ## X-DBM-MusicPack: 1
 ## X-DBM-MusicPack-GlobalName: DBMMPEpicMusicPack
 ## X-Curse-Project-ID: 492590
