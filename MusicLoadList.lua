@@ -70,6 +70,14 @@ function DBMMPEpicMusicPack()
         text = "EMP - 2WEI - Pandora", 
         value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_2WEI_Pandora.mp3"
     })
+	tinsert(DBM.Music, {
+        text = "EMP - Really Slow Motion - Thunder Fist", 
+        value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_RSM_ThunderFist.mp3"
+    })
+	tinsert(DBM.Music, {
+        text = "EMP - Really Slow Motion - Point of Origin", 
+        value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_RSM_PointOfOrigin.mp3"
+    })
 
     -- Dungeon BGM Table
 	if DBM.DungeonMusic then
@@ -136,6 +144,14 @@ function DBMMPEpicMusicPack()
         tinsert(DBM.DungeonMusic, {
             text = "EMP - 2WEI - Pandora", 
             value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_2WEI_Pandora.mp3"
+        })
+        tinsert(DBM.DungeonMusic, {
+            text = "EMP - Really Slow Motion - Thunder Fist", 
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_RSM_ThunderFist.mp3"
+        })
+        tinsert(DBM.DungeonMusic, {
+            text = "EMP - Really Slow Motion - Point of Origin", 
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_RSM_PointOfOrigin.mp3"
         })
     end
 
@@ -204,6 +220,14 @@ function DBMMPEpicMusicPack()
         tinsert(DBM.BattleMusic, {
             text = "EMP - 2WEI - Pandora", 
             value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_2WEI_Pandora.mp3"
+        })
+        tinsert(DBM.BattleMusic, {
+            text = "EMP - Really Slow Motion - Thunder Fist", 
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_RSM_ThunderFist.mp3"
+        })
+        tinsert(DBM.BattleMusic, {
+            text = "EMP - Really Slow Motion - Point of Origin", 
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_RSM_PointOfOrigin.mp3"
         })
     end
     

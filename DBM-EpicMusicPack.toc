@@ -3,9 +3,10 @@
 ## DefaultState: enabled
 ## RequiredDeps: DBM-Core
 ## Author: ZelionGG
-## Version: 1.1
+## Version: 1.1.1
 ## X-DBM-MusicPack: 1
 ## X-DBM-MusicPack-GlobalName: DBMMPEpicMusicPack
 ## X-Curse-Project-ID: 492590
+## X-Wago-ID: 7x61aB61
 
 MusicLoadList.lua
