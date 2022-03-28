@@ -70,6 +70,10 @@ function DBMMPEpicMusicPack()
         text = "EMP - 2WEI - Pandora", 
         value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_2WEI_Pandora.mp3"
     })
+    tinsert(DBM.Music, {
+        text = "EMP - 2WEI - Insomnia", 
+        value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_2WEI_Insomnia.mp3"
+    })
 	tinsert(DBM.Music, {
         text = "EMP - Really Slow Motion - Thunder Fist", 
         value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_RSM_ThunderFist.mp3"
@@ -150,6 +154,10 @@ function DBMMPEpicMusicPack()
             value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_2WEI_Pandora.mp3"
         })
         tinsert(DBM.DungeonMusic, {
+            text = "EMP - 2WEI - Insomnia", 
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_2WEI_Insomnia.mp3"
+        })
+        tinsert(DBM.DungeonMusic, {
             text = "EMP - Really Slow Motion - Thunder Fist", 
             value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_RSM_ThunderFist.mp3"
         })
@@ -228,6 +236,10 @@ function DBMMPEpicMusicPack()
         tinsert(DBM.BattleMusic, {
             text = "EMP - 2WEI - Pandora", 
             value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_2WEI_Pandora.mp3"
+        })
+        tinsert(DBM.BattleMusic, {
+            text = "EMP - 2WEI - Insomnia", 
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_2WEI_Insomnia.mp3"
         })
         tinsert(DBM.BattleMusic, {
             text = "EMP - Really Slow Motion - Thunder Fist", 
