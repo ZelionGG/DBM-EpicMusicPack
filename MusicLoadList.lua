@@ -78,6 +78,10 @@ function DBMMPEpicMusicPack()
         text = "EMP - Really Slow Motion - Point of Origin", 
         value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_RSM_PointOfOrigin.mp3"
     })
+	tinsert(DBM.Music, {
+        text = "EMP - Celestial Aeon Project - Battle Against Time", 
+        value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_CAP_BattleAgainstTime.mp3"
+    })
 
     -- Dungeon BGM Table
 	if DBM.DungeonMusic then
@@ -152,6 +156,10 @@ function DBMMPEpicMusicPack()
         tinsert(DBM.DungeonMusic, {
             text = "EMP - Really Slow Motion - Point of Origin", 
             value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_RSM_PointOfOrigin.mp3"
+        })
+        tinsert(DBM.DungeonMusic, {
+            text = "EMP - Celestial Aeon Project - Battle Against Time", 
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_CAP_BattleAgainstTime.mp3"
         })
     end
 
@@ -228,6 +236,10 @@ function DBMMPEpicMusicPack()
         tinsert(DBM.BattleMusic, {
             text = "EMP - Really Slow Motion - Point of Origin", 
             value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_RSM_PointOfOrigin.mp3"
+        })
+        tinsert(DBM.BattleMusic, {
+            text = "EMP - Celestial Aeon Project - Battle Against Time", 
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_CAP_BattleAgainstTime.mp3"
         })
     end
     
