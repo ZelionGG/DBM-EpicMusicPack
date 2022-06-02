@@ -1,7 +1,7 @@
 # DBM - Epic Music Pack
 
-## [1.2.3](https://github.com/ZelionGG/DBM-EpicMusicPack/tree/v1.2.3) (2022-03-29)
+## [1.2.4](https://github.com/ZelionGG/DBM-EpicMusicPack/tree/v1.2.4) (2022-06-02)
 
-[Full Changelog](https://github.com/ZelionGG/DBM-EpicMusicPack/compare/v1.2.2...v1.2.3) [Previous Releases](https://github.com/ZelionGG/DBM-EpicMusicPack/releases)
+[Full Changelog](https://github.com/ZelionGG/DBM-EpicMusicPack/compare/v1.2.3...v1.2.4) [Previous Releases](https://github.com/ZelionGG/DBM-EpicMusicPack/releases)
 
-- Updated "Insomnia" song.
+- ToC update for 9.2.5 retail client.
