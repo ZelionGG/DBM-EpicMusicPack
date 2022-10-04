@@ -8,11 +8,11 @@ function DBMMPEpicMusicPack()
     -- All Music Table
 	tinsert(DBM.Music, {
         text = "EMP - FormantX - Juggernaut March", 
-        value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_JuggernautMarch.ogg"
+        value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_JuggernautMarch.mp3"
     })
     tinsert(DBM.Music, {
         text = "EMP - FormantX - Quantum Sonata", 
-        value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_QuantumSonata.ogg"
+        value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_QuantumSonata.mp3"
     })
 	tinsert(DBM.Music, {
         text = "EMP - Niklas Johansson - Out Last Stand", 
@@ -24,7 +24,7 @@ function DBMMPEpicMusicPack()
     })
 	tinsert(DBM.Music, {
         text = "EMP - Edgar Hopp - Last Fight for Freedom", 
-        value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_LastFightforFreedom.ogg"
+        value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_LastFightforFreedom.mp3"
     })
 	tinsert(DBM.Music, {
         text = "EMP - Dream Cave - Last Strike for Glory", 
@@ -91,11 +91,11 @@ function DBMMPEpicMusicPack()
 	if DBM.DungeonMusic then
         tinsert(DBM.DungeonMusic, {
             text = "EMP - FormantX - Juggernaut March", 
-            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_JuggernautMarch.ogg"
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_JuggernautMarch.mp3"
         })
         tinsert(DBM.DungeonMusic, {
             text = "EMP - FormantX - Quantum Sonata", 
-            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_QuantumSonata.ogg"
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_QuantumSonata.mp3"
         })
         tinsert(DBM.DungeonMusic, {
             text = "EMP - Niklas Johansson - Out Last Stand", 
@@ -107,7 +107,7 @@ function DBMMPEpicMusicPack()
         })
         tinsert(DBM.DungeonMusic, {
             text = "EMP - Edgar Hopp - Last Fight for Freedom", 
-            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_LastFightforFreedom.ogg"
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_LastFightforFreedom.mp3"
         })
         tinsert(DBM.DungeonMusic, {
             text = "EMP - Dream Cave - Last Strike for Glory", 
@@ -175,11 +175,11 @@ function DBMMPEpicMusicPack()
 	if DBM.BattleMusic then
         tinsert(DBM.BattleMusic, {
             text = "EMP - FormantX - Juggernaut March", 
-            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_JuggernautMarch.ogg"
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_JuggernautMarch.mp3"
         })
         tinsert(DBM.BattleMusic, {
             text = "EMP - FormantX - Quantum Sonata", 
-            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_QuantumSonata.ogg"
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_QuantumSonata.mp3"
         })
         tinsert(DBM.BattleMusic, {
             text = "EMP - Niklas Johansson - Out Last Stand", 
@@ -191,7 +191,7 @@ function DBMMPEpicMusicPack()
         })
         tinsert(DBM.BattleMusic, {
             text = "EMP - Edgar Hopp - Last Fight for Freedom", 
-            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_LastFightforFreedom.ogg"
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_ES_LastFightforFreedom.mp3"
         })
         tinsert(DBM.BattleMusic, {
             text = "EMP - Dream Cave - Last Strike for Glory", 
