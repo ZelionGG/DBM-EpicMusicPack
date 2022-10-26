@@ -1,8 +1,7 @@
 # DBM - Epic Music Pack
 
-## [1.5](https://github.com/ZelionGG/DBM-EpicMusicPack/tree/v1.5) (2022-10-04)
+## [1.5.1](https://github.com/ZelionGG/DBM-EpicMusicPack/tree/v1.5.1) (2022-10-26)
 
-[Full Changelog](https://github.com/ZelionGG/DBM-EpicMusicPack/compare/v1.4.11...v1.5) [Previous Releases](https://github.com/ZelionGG/DBM-EpicMusicPack/releases)
+[Full Changelog](https://github.com/ZelionGG/DBM-EpicMusicPack/compare/v1.5...v1.5.1) [Previous Releases](https://github.com/ZelionGG/DBM-EpicMusicPack/releases)
 
-- Changed all .ogg files to .mp3 files (uniformization process)
-- All musics have gone through a compression process to make the module as light as possible
+- Bump TOC files for 10.0 pre-patch
