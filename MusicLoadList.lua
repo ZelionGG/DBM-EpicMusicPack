@@ -90,6 +90,10 @@ function DBMMPEpicMusicPack()
         text = "EMP - Hypersonic Music - Hold the Beacon", 
         value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_HSM_HoldTheBeacon.mp3"
     })
+	tinsert(DBM.Music, {
+        text = "EMP - Hypersonic Music - Tesseract", 
+        value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_HSM_Tesseract.mp3"
+    })
 
     -- Dungeon BGM Table
 	if DBM.DungeonMusic then
@@ -176,6 +180,10 @@ function DBMMPEpicMusicPack()
         tinsert(DBM.DungeonMusic, {
             text = "EMP - Hypersonic Music - Hold the Beacon", 
             value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_HSM_HoldTheBeacon.mp3"
+        })
+        tinsert(DBM.DungeonMusic, {
+            text = "EMP - Hypersonic Music - Tesseract", 
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_HSM_Tesseract.mp3"
         })
     end
 
@@ -264,6 +272,10 @@ function DBMMPEpicMusicPack()
         tinsert(DBM.BattleMusic, {
             text = "EMP - Hypersonic Music - Hold the Beacon", 
             value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_HSM_HoldTheBeacon.mp3"
+        })
+        tinsert(DBM.BattleMusic, {
+            text = "EMP - Hypersonic Music - Tesseract", 
+            value = "Interface\\AddOns\\DBM-EpicMusicPack\\Music\\EMP_HSM_Tesseract.mp3"
         })
     end
     
