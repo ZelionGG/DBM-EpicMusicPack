@@ -1,8 +1,8 @@
 # DBM - Epic Music Pack
 
-## [1.5.41](https://github.com/ZelionGG/DBM-EpicMusicPack/tree/v1.5.41) (2023-03-24)
+## [1.6](https://github.com/ZelionGG/DBM-EpicMusicPack/tree/v1.6) (2023-04-26)
 
-[Full Changelog](https://github.com/ZelionGG/DBM-EpicMusicPack/compare/v1.5.4...v1.5.41) [Previous Releases](https://github.com/ZelionGG/DBM-EpicMusicPack/releases)
+[Full Changelog](https://github.com/ZelionGG/DBM-EpicMusicPack/compare/v1.5.41...v1.6) [Previous Releases](https://github.com/ZelionGG/DBM-EpicMusicPack/releases)
 
-- Retail TOC update for patch 10.0.7.
-- Classic Wrath TOC update for patch 3.4.1.
+- Added 1 song
+- Removed TBC TOC
