@@ -1,10 +1,10 @@
-## Interface: 30402
-## X-Interface: 30402
+## Interface: 30403
+## X-Interface: 30403
 ## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Epic Music Pack|r by |r|cffFF0000ZelionGG
 ## DefaultState: enabled
 ## RequiredDeps: DBM-Core
 ## Author: ZelionGG
-## Version: 1.7.1
+## Version: 1.7.2
 ## Notes: https://github.com/ZelionGG/DBM-EpicMusicPack
 ## X-DBM-MusicPack: 1
 ## X-DBM-MusicPack-GlobalName: DBMMPEpicMusicPack
