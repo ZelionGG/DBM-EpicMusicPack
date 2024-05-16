@@ -1,11 +1,14 @@
 # DBM - Epic Music Pack
 
-## [1.7.32](https://github.com/ZelionGG/DBM-EpicMusicPack/tree/v1.7.32) (2024-03-22)
+## [1.8](https://github.com/ZelionGG/DBM-EpicMusicPack/tree/v1.8) (2024-05-16)
 
-[Full Changelog](https://github.com/ZelionGG/DBM-EpicMusicPack/compare/v1.7.31...v1.7.32) [Previous Releases](https://github.com/ZelionGG/DBM-EpicMusicPack/releases)
+[Full Changelog](https://github.com/ZelionGG/DBM-EpicMusicPack/compare/v1.7.32...v1.8) [Previous Releases](https://github.com/ZelionGG/DBM-EpicMusicPack/releases)
 
 ##### _Retail :_
-- TOC update for Retail 10.2.6.
+- TOC update for Retail 10.2.7.
 
-##### _Classic :_
-- TOC update for Classic 1.15.1.
+##### _Classic (SOD) :_
+- TOC update for Classic SOD 1.15.2.
+
+##### _Cata Classic :_
+- Added support for Cata Classic 4.4.0.
