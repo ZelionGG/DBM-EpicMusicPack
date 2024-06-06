@@ -1,14 +1,10 @@
 # DBM - Epic Music Pack
 
-## [1.8](https://github.com/ZelionGG/DBM-EpicMusicPack/tree/v1.8) (2024-05-16)
+## [2.0](https://github.com/ZelionGG/DBM-EpicMusicPack/tree/v2.0) (2024-06-07)
 
-[Full Changelog](https://github.com/ZelionGG/DBM-EpicMusicPack/compare/v1.7.32...v1.8) [Previous Releases](https://github.com/ZelionGG/DBM-EpicMusicPack/releases)
+[Full Changelog](https://github.com/ZelionGG/DBM-EpicMusicPack/compare/v1.8...v2.0) [Previous Releases](https://github.com/ZelionGG/DBM-EpicMusicPack/releases)
 
-##### _Retail :_
-- TOC update for Retail 10.2.7.
-
-##### _Classic (SOD) :_
-- TOC update for Classic SOD 1.15.2.
-
-##### _Cata Classic :_
-- Added support for Cata Classic 4.4.0.
+### _Global :_
+- Fully reworked the MusicLoadList to make adding new songs manually more convenient.
+- Songs from EpicMusicPack are now alphabetically ordered.
+- Removed Classic Wrath TOC.
