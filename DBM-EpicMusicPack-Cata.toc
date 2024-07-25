@@ -4,7 +4,7 @@
 ## DefaultState: enabled
 ## RequiredDeps: DBM-Core
 ## Author: ZelionGG
-## Version: 2.0
+## Version: 2.1
 ## Notes: https://github.com/ZelionGG/DBM-EpicMusicPack
 ## X-DBM-MusicPack: 1
 ## X-DBM-MusicPack-GlobalName: DBMMPEpicMusicPack

@@ -1,10 +1,9 @@
 # DBM - Epic Music Pack
 
-## [2.0](https://github.com/ZelionGG/DBM-EpicMusicPack/tree/v2.0) (2024-06-07)
+## [2.1](https://github.com/ZelionGG/DBM-EpicMusicPack/tree/v2.1) (2024-07-25)
 
-[Full Changelog](https://github.com/ZelionGG/DBM-EpicMusicPack/compare/v1.8...v2.0) [Previous Releases](https://github.com/ZelionGG/DBM-EpicMusicPack/releases)
+[Full Changelog](https://github.com/ZelionGG/DBM-EpicMusicPack/compare/v2.0...v2.1) [Previous Releases](https://github.com/ZelionGG/DBM-EpicMusicPack/releases)
 
 ### _Global :_
-- Fully reworked the MusicLoadList to make adding new songs manually more convenient.
-- Songs from EpicMusicPack are now alphabetically ordered.
-- Removed Classic Wrath TOC.
+
+- Updated for Retail 11.0.0 and Classic SoD 1.15.3.
