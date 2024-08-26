@@ -1,9 +1,9 @@
 # DBM - Epic Music Pack
 
-## [2.1](https://github.com/ZelionGG/DBM-EpicMusicPack/tree/v2.1) (2024-07-25)
+## [2.1.1](https://github.com/ZelionGG/DBM-EpicMusicPack/tree/v2.1.1) (2024-08-26)
 
-[Full Changelog](https://github.com/ZelionGG/DBM-EpicMusicPack/compare/v2.0...v2.1) [Previous Releases](https://github.com/ZelionGG/DBM-EpicMusicPack/releases)
+[Full Changelog](https://github.com/ZelionGG/DBM-EpicMusicPack/compare/v2.1...v2.1.1) [Previous Releases](https://github.com/ZelionGG/DBM-EpicMusicPack/releases)
 
-### _Global :_
+### _Retail :_
 
-- Updated for Retail 11.0.0 and Classic SoD 1.15.3.
+- Updated for Retail 11.0.2.
