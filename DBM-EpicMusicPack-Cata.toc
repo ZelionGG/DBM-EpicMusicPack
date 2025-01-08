@@ -1,5 +1,5 @@
-## Interface: 40400
-## X-Interface: 40400
+## Interface: 40401
+## X-Interface: 40401
 ## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Epic Music Pack|r by |r|cffFF0000ZelionGG
 ## DefaultState: enabled
 ## RequiredDeps: DBM-Core
