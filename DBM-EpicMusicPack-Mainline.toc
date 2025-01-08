@@ -1,5 +1,5 @@
-## Interface: 110005
-## X-Interface: 110005
+## Interface: 110007, 110100
+## X-Interface: 110007, 110100
 ## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Epic Music Pack|r by |r|cffFF0000ZelionGG
 ## DefaultState: enabled
 ## RequiredDeps: DBM-Core
