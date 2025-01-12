@@ -1,0 +1,10 @@
+package-as: DBM-EpicMusicPack
+
+enable-toc-creation: yes
+
+required-dependencies:
+  - deadly-boss-mods
+
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown

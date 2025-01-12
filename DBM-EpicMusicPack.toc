@@ -1,10 +1,11 @@
-## Interface: 11505
-## X-Interface: 11505
+## Interface: 110007, 110100
+## Interface-Classic: 11505
+## Interface-Cata: 40401
 ## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Epic Music Pack|r by |r|cffFF0000ZelionGG
 ## DefaultState: enabled
 ## RequiredDeps: DBM-Core
 ## Author: ZelionGG
-## Version: 2.1.3
+## Version: @project-version@
 ## Notes: https://github.com/ZelionGG/DBM-EpicMusicPack
 ## X-DBM-MusicPack: 1
 ## X-DBM-MusicPack-GlobalName: DBMMPEpicMusicPack
