@@ -16,8 +16,8 @@ jobs:
           webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL }}
           color: "197379"
           username: "DBM-EpicMusicPack"
-          avatar_url: "https://media.forgecdn.net/avatars/thumbnails/393/426/64/64/637588727386669588.jpeg"
+          avatar_url: "https://media.forgecdn.net/avatars/393/426/637588727386669588.jpeg"
           content: "||@everyone||"
           footer_title: "DBM-EpicMusicPack Changelog"
-          footer_icon_url: "https://media.forgecdn.net/avatars/thumbnails/393/426/64/64/637588727386669588.jpeg"
+          footer_icon_url: "https://media.forgecdn.net/avatars/393/426/637588727386669588.jpeg"
           footer_timestamp: true
