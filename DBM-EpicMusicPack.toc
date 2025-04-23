@@ -16,4 +16,6 @@
 ## X-Curse-Project-ID: 492590
 ## X-Wago-ID: 7x61aB61
 
+## Category: DBM
+
 MusicLoadList.lua
