@@ -1,16 +1,16 @@
 ## Interface: 40402
-## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Epic Music Pack|r by |r|cffFF0000ZelionGG
-## Author: ZelionGG
-## Version: @project-version@
+## Title:40402
+## Author: 40402
+## Version: 40402
 
-## Notes: https://github.com/ZelionGG/DBM-EpicMusicPack
+## Notes: https:40402
 
-## DefaultState: enabled
-## RequiredDeps: DBM-Core
+## DefaultState: 40402
+## RequiredDeps: 40402
 
-## X-DBM-MusicPack: 1
-## X-DBM-MusicPack-GlobalName: DBMMPEpicMusicPack
-## X-Curse-Project-ID: 492590
-## X-Wago-ID: 7x61aB61
+## X-DBM-MusicPack: 40402
+## X-DBM-MusicPack-GlobalName: 40402
+## X-Curse-Project-ID: 40402
+## X-Wago-ID: 40402
 
 MusicLoadList.lua

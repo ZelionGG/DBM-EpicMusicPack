@@ -1,19 +1,19 @@
 ## Interface: 110105
-## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Epic Music Pack|r by |r|cffFF0000ZelionGG
-## Author: ZelionGG
-## Version: @project-version@
-## IconTexture: Interface\Addons\DBM-EpicMusicPack\icon.png
+## Title:110105
+## Author: 110105
+## Version: 110105
+## IconTexture: 110105
 
-## Notes: https://github.com/ZelionGG/DBM-EpicMusicPack
+## Notes: https:110105
 
-## DefaultState: enabled
-## RequiredDeps: DBM-Core
+## DefaultState: 110105
+## RequiredDeps: 110105
 
-## X-DBM-MusicPack: 1
-## X-DBM-MusicPack-GlobalName: DBMMPEpicMusicPack
-## X-Curse-Project-ID: 492590
-## X-Wago-ID: 7x61aB61
+## X-DBM-MusicPack: 110105
+## X-DBM-MusicPack-GlobalName: 110105
+## X-Curse-Project-ID: 110105
+## X-Wago-ID: 110105
 
-## Category: DBM
+## Category: 110105
 
 MusicLoadList.lua
