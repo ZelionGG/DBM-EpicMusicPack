@@ -6,4 +6,4 @@
 
 ### _Retail :_
 
-- Updated for patch 11.1.7.
+- TOC update for **11.1.7**.
