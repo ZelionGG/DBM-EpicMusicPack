@@ -1,14 +1,9 @@
 # DBM - Epic Music Pack
 
-## [2.1.8](https://github.com/ZelionGG/DBM-EpicMusicPack/tree/v2.1.8) (2025-04-24)
+## [2.1.9](https://github.com/ZelionGG/DBM-EpicMusicPack/tree/v2.1.9) (2025-06-18)
 
-[Full Changelog](https://github.com/ZelionGG/DBM-EpicMusicPack/compare/v2.1.7...v2.1.8) [Previous Releases](https://github.com/ZelionGG/DBM-EpicMusicPack/releases)
-
-### _Global :_
-
-- TOC splitting into separate toc files for each flavour.
+[Full Changelog](https://github.com/ZelionGG/DBM-EpicMusicPack/compare/v2.1.8...v2.1.9) [Previous Releases](https://github.com/ZelionGG/DBM-EpicMusicPack/releases)
 
 ### _Retail :_
 
-- Added an icon for the addon.
-- Added the addon to the DBM category in the new addon frame.
+- Updated for patch 11.1.7.
