@@ -1,5 +1,7 @@
 package-as: DBM-EpicMusicPack
 
+enable-toc-creation: yes
+
 required-dependencies:
   - deadly-boss-mods
 
