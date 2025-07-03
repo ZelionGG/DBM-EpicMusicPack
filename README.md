@@ -111,5 +111,5 @@ Distributed under the GNU General Public License v3.0 (GPL-3.0). See `LICENSE` f
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [license-shield]: https://img.shields.io/github/license/ZelionGG/DBM-EpicMusicPack.svg?style=for-the-badge
 [license-url]: https://github.com/ZelionGG/DBM-EpicMusicPack/blob/master/LICENSE
-[discord-shield]: https://img.shields.io/discord/YOUR_DISCORD_ID?style=for-the-badge&logo=discord&colorB=7289DA
+[discord-shield]: https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white
 [discord-url]: https://discord.gg/g7JZNGSU32
