@@ -1,4 +1,4 @@
-## Interface: 40402
+## Interface: 110107
 ## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Epic Music Pack|r by |r|cffFF0000ZelionGG
 ## Author: ZelionGG
 ## Version: @project-version@
