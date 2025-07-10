@@ -27,15 +27,21 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-    </li>
+    <li><a href="#download">Download</a></li>
+    <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#installation">Installation</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#adding-custom-music">Adding Custom Music</a></li>
     <li><a href="#license">License</a></li>
   </ol>
 </details>
+
+## Download
+
+[![CurseForge](https://cf.way2muchnoise.eu/title/492590.svg?badge_style=for_the_badge)](https://www.curseforge.com/wow/addons/dbm-epicmusicpack) [![Wago](https://tinyurl.com/WagoBadge)](https://addons.wago.io/addons/dbm-epicmusicpack)
+[![Github Releases](https://img.shields.io/badge/GitHub%20Releases-121013?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ZelionGG/DBM-EpicMusicPack/releases)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
