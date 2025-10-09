@@ -38,19 +38,6 @@ function Write-Header {
         $boxWidth = $innerWidth + 2
     }
 
-function Split-LabelDefaults([string]$Label) {
-    $artist = ''
-    $title = $Label
-    if ($null -ne $Label) {
-        $idx = $Label.IndexOf(' - ')
-        if ($idx -ge 0) {
-            $artist = $Label.Substring(0, $idx)
-            $title = $Label.Substring($idx + 3)
-        }
-    }
-    [pscustomobject]@{ Artist = $artist; Title = $title }
-}
-
     # Helper: truncate with ellipsis if text doesn't fit
     function _Trunc([string]$s, [int]$avail) {
         if ($null -eq $s) { return '' }
@@ -87,6 +74,72 @@ function Split-LabelDefaults([string]$Label) {
     Write-Host ('#' + (' ' * $innerWidth) + '#') -ForegroundColor Cyan
     Write-Host ('#' * $boxWidth) -ForegroundColor Cyan
     Write-Host ''
+}
+
+function Select-Backup {
+    param([string]$DefaultRoot)
+    $root = $DefaultRoot
+    if (-not (Test-Path -LiteralPath $root)) { return $null }
+    $items = @()
+    # List timestamped folders and zip files
+    foreach ($it in (Get-ChildItem -LiteralPath $root -Force | Sort-Object LastWriteTime -Descending)) {
+        if ($it.PSIsContainer) {
+            $display = "[DIR]  $($it.Name)"
+            $items += [pscustomobject]@{ Path=$it.FullName; Display=$display; Time=$it.LastWriteTime }
+        } elseif ($it.Extension -and $it.Extension.ToLower() -eq '.zip') {
+            $display = "[ZIP]  $($it.Name)"
+            $items += [pscustomobject]@{ Path=$it.FullName; Display=$display; Time=$it.LastWriteTime }
+        }
+    }
+    if ($items.Count -eq 0) { return $null }
+    Write-Host "Available backups:" -ForegroundColor Cyan
+    $max = [Math]::Min(15, $items.Count)
+    for ($i=0; $i -lt $max; $i++) { Write-Host ("  {0}. {1}" -f ($i+1), $items[$i].Display) -ForegroundColor Gray }
+    $choice = Read-TextWithDefault -Message 'Select backup number (or leave blank for 1, or enter full path)' -Default '1'
+    $nRef = 0
+    if ([int]::TryParse($choice, [ref]$nRef)) {
+        $n = [int]$nRef
+        if ($n -ge 1 -and $n -le $items.Count) { return $items[$n-1].Path }
+        return $items[0].Path
+    }
+    if ([string]::IsNullOrWhiteSpace($choice)) { return $items[0].Path }
+    return $choice
+}
+
+function Remove-OldBackups {
+    param([string]$BackupRoot, [int]$KeepCount = 1, [string[]]$ExcludePaths)
+    if (-not (Test-Path -LiteralPath $BackupRoot)) { return 0 }
+    $all = Get-ChildItem -LiteralPath $BackupRoot -Force | Where-Object { $_.PSIsContainer -or ($_.Extension -and $_.Extension.ToLower() -eq '.zip') } | Sort-Object LastWriteTime -Descending
+    if ($all.Count -le $KeepCount) { return 0 }
+    $toKeep = $all | Select-Object -First $KeepCount
+    $keepSet = @{}
+    foreach ($k in $toKeep) { $keepSet[$k.FullName] = $true }
+    if ($ExcludePaths) { foreach ($p in $ExcludePaths) { $keepSet[$p] = $true } }
+    $removed = 0
+    foreach ($e in $all) {
+        if (-not $keepSet.ContainsKey($e.FullName)) {
+            try {
+                if ($e.PSIsContainer) { Remove-Item -LiteralPath $e.FullName -Recurse -Force -ErrorAction Stop } else { Remove-Item -LiteralPath $e.FullName -Force -ErrorAction Stop }
+                $removed++
+            } catch {
+                Write-Host ("[WARN] Failed to remove old backup: {0}" -f $e.FullName) -ForegroundColor Yellow
+            }
+        }
+    }
+    return $removed
+}
+
+function Split-LabelDefaults([string]$Label) {
+    $artist = ''
+    $title = $Label
+    if ($null -ne $Label) {
+        $idx = $Label.IndexOf(' - ')
+        if ($idx -ge 0) {
+            $artist = $Label.Substring(0, $idx)
+            $title = $Label.Substring($idx + 3)
+        }
+    }
+    [pscustomobject]@{ Artist = $artist; Title = $title }
 }
 
 function Read-TextWithDefault([string]$Message, [string]$Default = '') {
@@ -314,12 +367,18 @@ try {
     if (Read-YesNo 'Restore from an existing backup?' $false) {
         $docs = [Environment]::GetFolderPath('MyDocuments'); if ([string]::IsNullOrWhiteSpace($docs)) { $docs = (Join-Path $env:USERPROFILE 'Documents') }
         $defaultBackupRoot = Join-Path $docs 'DBM-EpicMusicPack_Backups'
-        $restorePath = Read-TextWithDefault -Message 'Enter backup path (folder or ZIP)' -Default $defaultBackupRoot
-        try {
-            [void](Restore-Backup -Root $root -SourcePath $restorePath)
-            Write-Host ("[OK] Restored from: {0}" -f $restorePath) -ForegroundColor DarkGreen
-        } catch {
-            Write-Host ("[WARN] Restore failed: {0}" -f $_.Exception.Message) -ForegroundColor Yellow
+        if (Read-YesNo 'Select from list of backups?' $true) {
+            $restorePath = Select-Backup -DefaultRoot $defaultBackupRoot
+        } else {
+            $restorePath = Read-TextWithDefault -Message 'Enter backup path (folder or ZIP)' -Default $defaultBackupRoot
+        }
+        if ($restorePath) {
+            try {
+                [void](Restore-Backup -Root $root -SourcePath $restorePath)
+                Write-Host ("[OK] Restored from: {0}" -f $restorePath) -ForegroundColor DarkGreen
+            } catch {
+                Write-Host ("[WARN] Restore failed: {0}" -f $_.Exception.Message) -ForegroundColor Yellow
+            }
         }
     }
 
@@ -426,9 +485,6 @@ try {
     }
     Write-Host ("     Source folder: {0}" -f $musicDir) -ForegroundColor Gray
     if ($restorePath) { Write-Host ("     Restored from: {0}" -f $restorePath) -ForegroundColor Gray }
-    if ($manualEach -and $manualSavedCount -gt 0) {
-        Write-Host ("     Overrides saved: {0} -> {1}" -f $manualSavedCount, (Join-Path $root 'music_overrides.csv')) -ForegroundColor Gray
-    }
 
     # Post-generation backup (destination selectable)
     if (Read-YesNo 'Create a backup of the current state now?' $true) {
@@ -440,6 +496,10 @@ try {
             $finalBackup = New-Backup -Root $root -DestinationRoot $destFolder -Compress:$compressBackup
             Write-Host ("[OK] Backup created: {0}" -f $finalBackup.BackupDir) -ForegroundColor DarkGreen
             if ($finalBackup.ZipPath) { Write-Host ("      ZIP: {0}" -f $finalBackup.ZipPath) -ForegroundColor DarkGreen }
+            if (Read-YesNo 'Keep only the latest backup (delete older ones)?' $true) {
+                $removed = Remove-OldBackups -BackupRoot $destFolder -KeepCount 1
+                if ($removed -gt 0) { Write-Host ("[INFO] Backups removed: {0}" -f $removed) -ForegroundColor DarkCyan }
+            }
         } catch {
             Write-Host ("[WARN] Backup failed: {0}" -f $_.Exception.Message) -ForegroundColor Yellow
         }
