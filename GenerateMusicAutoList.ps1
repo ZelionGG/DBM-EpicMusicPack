@@ -167,9 +167,18 @@ function Get-ManualDefaults([string]$Key, $ArtistMap) {
 }
 
 function Read-YesNo([string]$Message, [bool]$DefaultYes = $true) {
-    $suffix = if ($DefaultYes) { ' [Y/n]' } else { ' [y/N]' }
     while ($true) {
-        Write-Host -ForegroundColor White -NoNewline ("$Message${suffix}: ")
+        Write-Host -ForegroundColor White -NoNewline $Message
+        Write-Host -NoNewline ' ['
+        if ($DefaultYes) {
+            Write-Host -ForegroundColor Green -NoNewline 'Y'
+            Write-Host -NoNewline '/n]'
+        } else {
+            Write-Host -NoNewline 'y/'
+            Write-Host -ForegroundColor Green -NoNewline 'N'
+            Write-Host -NoNewline ']'
+        }
+        Write-Host -NoNewline ': '
         $resp = Read-Host
         if ([string]::IsNullOrWhiteSpace($resp)) { return $DefaultYes }
         switch ($resp.ToLower()) {
