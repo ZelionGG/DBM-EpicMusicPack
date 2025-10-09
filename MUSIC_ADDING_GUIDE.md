@@ -13,12 +13,13 @@ This guide explains how to easily add music tracks and automatically generate th
 ## Quick steps
 
 1. Place your `.mp3` files in `DBM-EpicMusicPack/Music/custom/`.
-2. Double-click `GenerateMusicAutoList.bat`.
-3. At the prompt, answer the question:
+2. Rename `GenerateMusicAutoList.bat.txt` to `GenerateMusicAutoList.bat` and `GenerateMusicAutoList.ps1.txt` to `GenerateMusicAutoList.ps1`.
+3. Double-click `GenerateMusicAutoList.bat`.
+4. At the prompt, answer the question:
    - `Y` = Enable auto-guess (derive `Artist - Title` from the filename)
    - `N` = Disable auto-guess (basic label from the filename)
-4. The script creates/overwrites `MusicAutoList.lua`.
-5. Launch the game (or `/reload`) and find your tracks in DBM’s music menus (prefix `EMP -`).
+5. The script creates/overwrites `MusicAutoList.lua`.
+6. Launch the game (or `/reload`) and find your tracks in DBM’s music menus (prefix `EMP -`).
 
 ## Recommended file naming format
 
