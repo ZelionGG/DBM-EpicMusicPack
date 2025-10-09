@@ -16,4 +16,6 @@
 
 ## Category: DBM
 
+MusicAutoList.lua
 MusicLoadList.lua
+MusicAutoMerge.lua
