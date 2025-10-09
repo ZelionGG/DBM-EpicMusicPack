@@ -2,5 +2,5 @@
 -- Do not edit manually. Use music_overrides.csv to override labels.
 
 EMP_MUSIC_AUTOLIST = {
-    ["EMP_Onlap_CrawlingInTheDark"] = "Onlap - CrawlingInTheDark",
+    ["EMP_Onlap_CrawlingInTheDark"] = "Onlap - Crawling in the Dark",
 }
