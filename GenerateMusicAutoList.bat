@@ -10,14 +10,42 @@ REM    - music_overrides.csv   -> KEY,Label (Label may contain commas)
 REM    - artist_map.csv        -> CODE,Artist Full Name
 REM ============================================================================
 
+REM If PowerShell script exists, prefer it for better UI/styling
+if exist "%~dp0GenerateMusicAutoList.ps1" (
+  powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0GenerateMusicAutoList.ps1"
+  exit /b %ERRORLEVEL%
+)
+
+title DeadlyBossMods - Epic Music Pack by ZelionGG
+color 07
+echo.
+color 0B
+echo ###############################################
+echo #                                             #
+echo #   DeadlyBossMods - Epic Music Pack by       #
+color 0E
+echo #   ZelionGG                                  #
+color 0B
+echo #                                             #
+echo ###############################################
+color 07
+echo.
+
 REM Resolve addon root (this script's folder)
 set "ROOT=%~dp0"
 set "MUSIC_DIR=%ROOT%Music\custom"
 set "OUT_FILE=%ROOT%MusicAutoList.lua"
 
 if not exist "%ROOT%Music" (
+  color 0C
   echo [ERROR] Music directory not found: "%ROOT%Music"
   echo Make sure you run this script from inside DBM-EpicMusicPack folder.
+  echo.
+  color 0F
+  echo Press any key to exit...
+  color 0C
+  pause >nul
+  color 07
   exit /b 1
 )
 if not exist "%MUSIC_DIR%" (
@@ -27,8 +55,10 @@ if not exist "%MUSIC_DIR%" (
 
 REM Prompt for auto-guess option
 set "AUTOGUESS="
+color 0F
 set /p AUTOGUESS=Auto guess Artist and Song name? (Y/N): 
 if /i "%AUTOGUESS%"=="Y" (set "AUTOGUESS=Y") else (set "AUTOGUESS=N")
+color 07
 
 REM No exclusion prompt: only scanning Music\custom to avoid official duplicates by design
 
@@ -147,6 +177,7 @@ for /f "usebackq delims=" %%F in (`dir /b /a-d /on "%MUSIC_DIR%\*.mp3"`) do (
 >>"%OUT_FILE%" echo }
 
 echo.
+color 0A
 echo [OK] Generated: "%OUT_FILE%"
 echo      Tracks found: %TOTAL%
 if defined OVR_COUNT echo      Overrides loaded: %OVR_COUNT% ^(used: %USED_OVR%^) else echo      Overrides loaded: 0
@@ -156,6 +187,14 @@ if /i "%AUTOGUESS%"=="Y" (
   echo      Auto-guess: DISABLED
 )
 echo      Source folder: "%MUSIC_DIR%"
+color 07
 
+echo.
+color 0F
+echo Press any key to exit...
+color 07
+pause >nul
+
+color 07
 endlocal
 exit /b 0
