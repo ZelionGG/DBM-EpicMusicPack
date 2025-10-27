@@ -1,8 +1,8 @@
 # DBM - Epic Music Pack
 
-## [3.0](https://github.com/ZelionGG/DBM-EpicMusicPack/tree/v3.0) (2025-10-09)
+## [3.0.1](https://github.com/ZelionGG/DBM-EpicMusicPack/tree/v3.0.1) (2025-10-27)
 
-[Full Changelog](https://github.com/ZelionGG/DBM-EpicMusicPack/compare/v2.2.1...v3.0) [Previous Releases](https://github.com/ZelionGG/DBM-EpicMusicPack/releases)
+[Full Changelog](https://github.com/ZelionGG/DBM-EpicMusicPack/compare/v3.0...v3.0.1) [Previous Releases](https://github.com/ZelionGG/DBM-EpicMusicPack/releases)
 
 ### Important
 
@@ -13,9 +13,13 @@
 
 ### _Retail :_
 
-- TOC update for Retail **11.2.5**.
+- TOC prep for Retail **11.2.7**.
 
-### _Midnight Alpha :_
+### _Mists of Pandaria Classic :_
 
-- TOC prep for **12.0** alpha.
+- TOC update for Mists of Pandaria Classic **5.5.2**.
+
+### _Vanilla :_
+
+- TOC update for Vanilla **1.15.8**.
 
