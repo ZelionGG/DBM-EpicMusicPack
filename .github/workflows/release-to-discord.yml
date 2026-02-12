@@ -17,7 +17,7 @@ jobs:
           color: "197379"
           username: "DBM-EpicMusicPack"
           avatar_url: "https://raw.githubusercontent.com/ZelionGG/DBM-EpicMusicPack/main/icon.png"
-          content: "||@everyone||"
+          content: "||@ping-updates||"
           footer_title: "DBM-EpicMusicPack Changelog"
           footer_icon_url: "https://raw.githubusercontent.com/ZelionGG/DBM-EpicMusicPack/main/icon.png"
           footer_timestamp: true
