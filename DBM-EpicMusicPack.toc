@@ -1,4 +1,5 @@
-## Interface: 120001
+## Interface: 120001, 50503, 38000, 20505, 11508
+
 ## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Epic Music Pack|r by |r|cffFF0000ZelionGG
 ## Notes-ruRU: Эпическая музыка для звуковых событий DBM
 ## Author: ZelionGG
